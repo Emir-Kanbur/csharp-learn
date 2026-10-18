@@ -1,0 +1,1 @@
+Bu repo C# dilini öğrenirken kullandığım kaynaklardan elde ettiğim çıktıları, örnekleri ve gerek kısa konuları içermektedir.

@@ -1,0 +1,13 @@
+# OS Files
+.DS_Store
+
+# C /C++ Files
+*.o
+*.a
+
+# Executable Files
+*.exe
+
+# Backup Files
+*.bak
+
