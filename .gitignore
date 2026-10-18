@@ -11,3 +11,12 @@
 # Backup Files
 *.bak
 
+
+# Build outputs
+**/bin/
+**/obj/
+.vs/
+
+# Visual Studio
+*.user
+*.suo
