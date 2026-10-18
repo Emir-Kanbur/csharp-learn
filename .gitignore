@@ -1,26 +1,51 @@
-# OS Files
-.DS_Store
-
-# C /C++ Files
-*.o
-*.a
-
-# Executable Files
-*.exe
-
-# Backup Files
-*.bak
-
-
-# Build outputs
+# .NET build outputs
 **/bin/
 **/obj/
-.vs/
+**/artifacts/
+**/TestResults/
+
+# NuGet packages and generated package files
+**/packages/
+*.nupkg
+*.snupkg
 
 # Visual Studio
-*.user
+.vs/
 *.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# macOS metadata
+# Visual Studio Code
+.vscode/
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# .NET test and coverage outputs
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+**/secrets.json
+*.pfx
+*.p12
+*.snk
+
+# OS metadata
 .DS_Store
-**/.DS_Store
+._*
+Thumbs.db
+
+# Native compiler outputs (if native interop examples are added)
+*.o
+*.a
+*.exe
+*.bak
