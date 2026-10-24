@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MetinAnalizSistemi/MetinAnalizSistemi.csproj" />
+  <Project Path="NotAnalizSistemi/NotAnalizSistemi.csproj" />
+</Solution>
