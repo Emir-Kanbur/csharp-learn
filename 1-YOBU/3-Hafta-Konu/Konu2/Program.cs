@@ -10,7 +10,7 @@ internal class Program
         ArrayList arList = new ArrayList();
         arList.Add(5);
         arList.Add(6);
-        arList.Add("emir");
+        arList.Add("Deneme");
         arList.AddRange(dizi);
         arList.Insert(1, "BAKIR");
         foreach (object? item in arList)
