@@ -1,0 +1,56 @@
+<Solution>
+  <Folder Name="/1-YOBU/1-Hafta-Konu/">
+    <Project Path="1-YOBU/1-Hafta-Konu/Konu1/1.1.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Konu/Konu2/1.2.csproj" />
+  </Folder>
+  <Folder Name="/1-YOBU/1-Hafta-Lab/">
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek1/1.1.1.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek2/1.1.2.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek3/1.1.3.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek4/1.1.4.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek5/1.1.5.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek6/Ornek6.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek7/Ornek7.csproj" />
+    <Project Path="1-YOBU/1-Hafta-Lab/Ornek8/Ornek8.csproj" />
+  </Folder>
+  <Folder Name="/1-YOBU/2-Hafta-Lab/">
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek1/Ornek1.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek10/Ornek10.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek2/Ornek2.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek3/Ornek3.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek4/Ornek4.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek5/Ornek5.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek6/Ornek6.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek7/Ornek7.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek8/Ornek8.csproj" />
+    <Project Path="1-YOBU/2-Hafta-Lab/Ornek9/Ornek9.csproj" />
+  </Folder>
+  <Folder Name="/1-YOBU/3-Hafta-Konu/">
+    <Project Path="1-YOBU/3-Hafta-Konu/Konu1/Konu1.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Konu/Konu2/Konu2.csproj" />
+  </Folder>
+  <Folder Name="/1-YOBU/3-Hafta-Lab/">
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek1/Ornek1.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek10/Ornek10.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek11/Ornek11.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek12/Ornek12.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek2/Ornek2.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek3/Ornek3.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek4/Ornek4.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek5/Ornek5.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek6/Ornek6.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek7/Ornek7.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek8/Ornek8.csproj" />
+    <Project Path="1-YOBU/3-Hafta-Lab/Ornek9/Ornek9.csproj" />
+  </Folder>
+  <Folder Name="/Odev/Hafta2/">
+    <Project Path="Odev/Hafta2/Hafta2-Odev.csproj" />
+  </Folder>
+  <Folder Name="/Odev/Hafta3/">
+    <Project Path="Odev/Hafta3/NotAnalizSistemi/MetinAnalizSistemi/MetinAnalizSistemi.csproj" />
+    <Project Path="Odev/Hafta3/NotAnalizSistemi/NotAnalizSistemi/NotAnalizSistemi.csproj" />
+  </Folder>
+  <Folder Name="/Odev/Hafta4/">
+    <Project Path="Odev/Hafta4/KutuphaneOtomasyonu/KutuphaneOtomasyonu.csproj" />
+  </Folder>
+</Solution>

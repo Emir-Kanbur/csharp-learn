@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Text;
 
@@ -6,7 +5,10 @@ Console.OutputEncoding = Encoding.UTF8;
 
 Console.WriteLine("=== NOT ANALIZ SISTEMI ===");
 
-int ogrenciSayisi = SayiOku("Ogrenci sayisi (5-20): ", 5, 20);
+if (SayiOku("Ogrenci sayisi (5-20): ", 5, 20) is not int ogrenciSayisi)
+{
+    return;
+}
 
 string[] adlar = new string[ogrenciSayisi];
 int[] notlar = new int[ogrenciSayisi];
@@ -15,8 +17,14 @@ for (int i = 0; i < ogrenciSayisi; i++)
 {
     Console.WriteLine($"\n{i + 1}. Ogrenci");
 
-    adlar[i] = AdOku("Ogrenci adi: ");
-    notlar[i] = SayiOku("Ogrenci notu (0-100): ", 0, 100);
+    if (AdOku("Ogrenci adi: ") is not string ad
+        || SayiOku("Ogrenci notu (0-100): ", 0, 100) is not int puan)
+    {
+        return;
+    }
+
+    adlar[i] = ad;
+    notlar[i] = puan;
 }
 
 double ortalama = OrtalamaHesapla(notlar);
@@ -50,12 +58,16 @@ Console.WriteLine(rapor.ToString());
 
 
 // Belirlenen aralikta sayi okuma
-static int SayiOku(string mesaj, int min, int max)
+static int? SayiOku(string mesaj, int min, int max)
 {
     while (true)
     {
         Console.Write(mesaj);
-        string giris = Console.ReadLine() ?? "";
+        string? giris = Console.ReadLine();
+        if (giris is null)
+        {
+            return null;
+        }
 
         if (int.TryParse(giris, out int sayi)
             && sayi >= min && sayi <= max)
@@ -68,16 +80,20 @@ static int SayiOku(string mesaj, int min, int max)
 }
 
 // Bos olmayan ogrenci adi okuma
-static string AdOku(string mesaj)
+static string? AdOku(string mesaj)
 {
     while (true)
     {
         Console.Write(mesaj);
-        string ad = (Console.ReadLine() ?? "").Trim();
+        string? ad = Console.ReadLine();
+        if (ad is null)
+        {
+            return null;
+        }
 
         if (!string.IsNullOrWhiteSpace(ad))
         {
-            return ad;
+            return ad.Trim();
         }
 
         Console.WriteLine("Ogrenci adi bos olamaz!");

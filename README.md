@@ -1,40 +1,38 @@
-# C# Learn
+# C# Öğrenme Notları ve Uygulamaları
 
-Bu repository, C# öğrenme sürecinde yapılan hafta içi konuları, örnek uygulamaları, lab çalışmaları ve ödevleri içerir.
+Yozgat Bozok Üniversitesi derslerinde hazırlanan Türkçe C# notları, konsol örnekleri ve ödevler.
 
-Amaç: C# temellerini adım adım öğrenmek, küçük örneklerle kavramları anlamak ve pratik yapmak.
+| Bölüm | İçerik |
+| --- | --- |
+| [1. hafta](./1-YOBU/1-Hafta-Konu/) | Ders örnekleri ve [laboratuvar](./1-YOBU/1-Hafta-Lab/) |
+| [2. hafta](./1-YOBU/2-Hafta-Lab/) | Laboratuvar ve [haftalık ödev](./Odev/Hafta2/) |
+| [3. hafta](./1-YOBU/3-Hafta-Konu/) | Ders örnekleri, [laboratuvar](./1-YOBU/3-Hafta-Lab/) ve [not/metin analizi ödevi](./Odev/Hafta3/NotAnalizSistemi/) |
+| [4. hafta](./Odev/Hafta4/KutuphaneOtomasyonu/) | Kitap arama, ödünç alma ve iade işlemlerini örnekleyen kütüphane otomasyonu |
 
-## İçerik
+## Derleme ve çalıştırma
 
-- 1-YOBU/1-Hafta-Konu
-- 1-YOBU/1-Hafta-Lab
-- 1-YOBU/2-Hafta-Lab
-- 1-YOBU/3-Hafta-Konu
-- 1-YOBU/3-Hafta-Lab
-- Odev/Hafta2
+.NET 10 SDK ile depo kökünde şu komutları kullanabilirsiniz:
 
-## Çalıştırma
+```sh
+# Tüm ders ve ödev projelerini derle
+dotnet build CSharpLearn.slnx --configuration Release
 
-Her örnek kendi klasöründe ayrı bir .NET console uygulamasıdır.
-
-Örnek:
-
-```bash
+# Tek bir laboratuvar örneğini çalıştır
 dotnet run --project 1-YOBU/3-Hafta-Lab/Ornek2/Ornek2.csproj
+
+# Kütüphane otomasyonunu çalıştır
+dotnet run --project Odev/Hafta4/KutuphaneOtomasyonu
 ```
 
-Veya ilgili klasöre gidip:
+Her örnek bağımsız bir konsol uygulamasıdır. Yeni bir örnek oluşturduğunuzda çözüm dosyasına da ekleyin:
 
-```bash
-dotnet run
+```sh
+dotnet new console --output 1-YOBU/4-Hafta-Lab/Ornek1
+dotnet sln CSharpLearn.slnx add 1-YOBU/4-Hafta-Lab/Ornek1/Ornek1.csproj --solution-folder 1-YOBU/4-Hafta-Lab
 ```
 
-## Notlar
-
-- Bu repo eğitim amaçlıdır.
-- Örnekler ve konular ilerleyerek geliştirilir.
-- Öğrenme sürecinde daha iyi kavrayış için konular ayrı klasörlerde tutulmuştur.
+GitHub Actions çözümdeki tüm projeleri derler. Her proje ortak .NET ayarlarını [Directory.Build.props](./Directory.Build.props) dosyasından alır.
 
 ## Lisans
 
-Bu proje MIT lisansı altında paylaşılmıştır.
+[MIT lisansı](./LICENSE).

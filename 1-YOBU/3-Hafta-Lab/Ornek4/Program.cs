@@ -1,14 +1,13 @@
 ﻿// UYGULAMA: ISTEGE BAGLI ISIMLENDIRILME VE PARAMS PARAMETRELER
 
-using System.ComponentModel;
-using System.Runtime.Serialization;
-
 int uygulamaNo = 4;
 
 switch (uygulamaNo)
 {
     case 4:
         {
+            Uygulama04_OpsiyonelIsimliParams();
+
             static void Uygulama04_OpsiyonelIsimliParams()
             {
                 // TAHMIN ET: Ikinci cagrida arguman sırası neden sorun olmuyor?
@@ -32,6 +31,7 @@ switch (uygulamaNo)
                 foreach (int sayi in sayilar)
                     toplam += sayi;
 
+                return toplam;
             }
         }
         break;

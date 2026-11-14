@@ -12,9 +12,7 @@ library.AddBook(new Book("1001", "Kurk Mantolu Madonna", author1));
 library.AddBook(new Book("1002", "Kuyucakli Yusuf", author1));
 library.AddBook(new Book("1003", "Ince Memed", author2));
 
-bool running = true;
-
-while (running)
+while (true)
 {
     Console.WriteLine();
     Console.WriteLine(" KUTUPHANE OTOMASYONU ");
@@ -140,10 +138,12 @@ while (running)
             Console.WriteLine("Olusturulan kitap: " + Book.CreatedCount);
             break;
 
+        case null:
+            return;
+
         case "7":
             Console.WriteLine("Program kapatiliyor...");
-            running = false;
-            break;
+            return;
 
         default:
             Console.WriteLine("Gecersiz secim yaptiniz.");

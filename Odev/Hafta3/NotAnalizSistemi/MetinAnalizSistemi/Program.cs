@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Text;
 
@@ -12,7 +11,11 @@ string[] konular;
 while (true)
 {
     Console.Write("Konulari virgulle ayirarak giriniz: ");
-    string giris = (Console.ReadLine() ?? "").Trim();
+    string? giris = Console.ReadLine();
+    if (giris is null)
+    {
+        return;
+    }
 
     if (string.IsNullOrWhiteSpace(giris))
     {

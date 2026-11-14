@@ -2,12 +2,18 @@
 // Amac : Girdi, TryParse, aritmetik islem ve bicimli ciktiyi birlestirmek.
 
 Console.WriteLine("Kisa kenari giriniz:");
-string kisaKenarMetni = Console.ReadLine();
-double.TryParse(kisaKenarMetni, out double kisaKenar);
+if (!double.TryParse(Console.ReadLine(), out double kisaKenar))
+{
+    Console.WriteLine("Lutfen gecerli bir sayi giriniz.");
+    return;
+}
 
 Console.WriteLine("Uzun kenari giriniz:");
-string uzunKenarMetni = Console.ReadLine();
-double.TryParse(uzunKenarMetni, out double uzunKenar);
+if (!double.TryParse(Console.ReadLine(), out double uzunKenar))
+{
+    Console.WriteLine("Lutfen gecerli bir sayi giriniz.");
+    return;
+}
 
 double alan = kisaKenar * uzunKenar;
 double cevre = 2 * (kisaKenar + uzunKenar);

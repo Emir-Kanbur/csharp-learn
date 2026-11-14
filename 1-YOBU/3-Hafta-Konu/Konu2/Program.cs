@@ -1,6 +1,4 @@
-﻿using System.Collections
-
-using System.Runtime.CompilerServices;
+﻿using System.Collections;
 
 namespace Uygulama2;
 
@@ -15,7 +13,7 @@ internal class Program
         arList.Add("emir");
         arList.AddRange(dizi);
         arList.Insert(1, "BAKIR");
-        foreach (int item in arList)
+        foreach (object? item in arList)
         {
             Console.WriteLine(item);
         }

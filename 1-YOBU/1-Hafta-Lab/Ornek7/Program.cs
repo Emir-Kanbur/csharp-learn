@@ -2,8 +2,11 @@
 // AMAC : decimal turunu ve parasal cikti bicimini kullanmak
 
 Console.WriteLine("Urun fiyatini giriniz:");
-string urunFiyatiMetni = Console.ReadLine();
-decimal.TryParse(urunFiyatiMetni, out decimal urunFiyati);
+if (!decimal.TryParse(Console.ReadLine(), out decimal urunFiyati))
+{
+    Console.WriteLine("Lutfen gecerli bir sayi giriniz.");
+    return;
+}
 
 decimal kdvOrani = 0.20m;
 decimal kdvTutari = urunFiyati * kdvOrani;

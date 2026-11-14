@@ -4,7 +4,7 @@
 Console.WriteLine("\n ---Uygulama : Yas Donusturme ---");
 
 Console.Write("Yasinizi giriniz: ");
-string yasMetni = Console.ReadLine();
+string? yasMetni = Console.ReadLine();
 
 bool yasDonustuMu = int.TryParse(yasMetni, out int yas);
 int gelecekYilYas = yas + 1;

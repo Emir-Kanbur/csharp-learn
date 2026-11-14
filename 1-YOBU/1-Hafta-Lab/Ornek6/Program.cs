@@ -2,8 +2,11 @@
 // Amac : double turu islem onceligi ve ondalikli cikti
 
 Console.Write("santigrat sicaklik degerini giriniz:");
-string santigratMetni = Console.ReadLine();
-double.TryParse(santigratMetni, out double santigrat);
+if (!double.TryParse(Console.ReadLine(), out double santigrat))
+{
+    Console.WriteLine("Lutfen gecerli bir sayi giriniz.");
+    return;
+}
 
 double fahrenheit = (santigrat * 9 / 5) + 32;
 
